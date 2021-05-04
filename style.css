@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "Saira", sans-serif;
+  color: white;
+  overflow: hidden;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/plain.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-text h1 {
+  margin: 2rem 0 5rem 0;
+  font-size: 3.6rem;
+}
+.choice {
+  text-align: center;
+}
+.choice h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.buttons button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 1.5rem 3.5rem;
+  color: white;
+  font-size: 2rem;
+  margin: 0 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.ground {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/dirt.png");
+  background-repeat: repeat-y;
+}
+.ground h2 {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 10rem 0;
+}
+.list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+  border-bottom: 2px solid white;
+}
+.list-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.4rem;
+  padding: 1rem 3rem;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.3s;
+}
+.list-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.name-icon {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+}
+.name-icon img {
+  max-width: 75px;
+  display: block;
+  margin-right: 2rem;
+}
